@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title_block %}
+    {% endblock %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/auth.css" %}">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">DURGA EXAMS</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" href="/java">Java Exams</a></li>
+                <li> <a class="navbar-brand" href="/python">Python Exams</a> </li> 
+                <li> <a class="navbar-brand" href="/aptitude">Aptitude Exams</a> </li> 
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {% if request.user.is_authenticated %}
+                <li><a class="navbar-brand" href="/accounts/logout">Logout</a></li>
+                {% else %}
+                <li><a class="navbar-brand" href="/accounts/login">Login</a></li>
+                <li><a class="navbar-brand" href="/singup">SingUp</a></li>
+                 {% endif %}
+            </ul>
+
+        </div>
+    </nav>
+      {%block body_block%} 
+      {%endblock%}     
+</body>
+</html>

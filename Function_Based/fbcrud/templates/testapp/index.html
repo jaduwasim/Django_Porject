@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/fbv.css' %}">
+</head>
+<body>
+    <h1>Welocome to CRUD Poject</h1><hr><br>
+    {% if empdata %}
+    {% for data in empdata %}
+    <table border="2" align="center">
+        <tr>
+            <th>Employee Number</th>
+            <th>Employee Name</th>
+            <th>Employee Address</th>
+            <th>Employee Salary</th>
+            <th>action</th>
+        </tr>
+        <tr>
+            <td>{{data.eno}}</td>
+            <td>{{data.ename}}</td>
+            <td>{{data.eaddr}}</td>
+            <td>{{data.esal}}</td>
+            <td>
+                <a href="/update/{{data.id}}" class="btn btn-warning">Update</a> <a href="/delete/{{data.id}}" class="btn btn-warning">Delete</a>
+            </td>
+        </tr>
+    </table> <br>
+
+    {% endfor %}
+    {% else %}
+    <h1>Data not Found</h1>
+    {% endif %}
+    <a href="/insert" class="btn btn-success">Insert Data</a>
+</body>
+</html>

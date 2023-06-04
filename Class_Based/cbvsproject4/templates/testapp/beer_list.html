@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+
+{% block body_block %}
+    {% if beer_list %}
+    <h1>Beer Page</h1>
+    {% for beer in beer_list %}
+    <ul>
+        <li><a href="/testapp/{{beer.id}}">{{beer.name}}</a></li>
+    </ul>
+    {% endfor %}
+    {% else %}
+    <h1>Record No found!!</h1>
+    {%endif%}
+    <a href="/testapp/create" class="btn btn-success">insert</a>
+{% endblock %}

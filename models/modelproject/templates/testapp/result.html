@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Information</title>
+    <link rel="stylesheet" href="{% static 'testapp/student.css' %}">
+</head>
+<body>
+    <h1>Student Data Information</h1>
+    {% if data %}
+    <table border="1">
+        <thead>
+            <th>ENAME</th>
+            <th>EMARKS</th>
+        </thead>
+        {% for st in data %}
+        <tr>
+            <td>{{st.name}}</td>
+            <td>{{st.marks}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No Recorf Found!!!</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block title_block %}
+    <title>All Records</title>
+{% endblock %}
+
+{% block base_blok %}
+
+    {% if company_list %}
+    <h1>Comapany List</h1>
+    {% for company in company_list %}
+    <ul>
+        <li><a href="/{{company.id}}">{{company.name}}</a></li>
+    </ul>
+    {%endfor%}
+    {%else%}
+    <h1>No Records Found</h1>
+    {%endif%}
+    <a href="/create" class="btn btn-success">Insert Records</a>
+
+{% endblock %}

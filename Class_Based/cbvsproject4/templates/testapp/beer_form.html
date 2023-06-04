@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+
+{% block body_block %}
+    <form action="" method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-success" value="insert/update">
+    </form><br>
+    <a href="/testapp" class="btn btn-success">Back</a>
+{% endblock %}

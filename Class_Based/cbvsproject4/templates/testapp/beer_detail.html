@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+
+{% block body_block %}
+<h1>Beer Details</h1>
+<ul>
+    <li>{{object.name}}</li>
+    <li>{{beer.taste}}</li>
+    <li>{{beer.color}}</li>
+    <li>{{beer.price}}</li>
+</ul>
+<a href="/testapp" class="btn btn-success">All Record</a>
+<a href="/testapp/create" class="btn btn-success">insert</a>
+<a href="/testapp/update/{{beer.id}}" class="btn btn-success">update</a>
+<a href="/testapp/delete/{{beer.id}}" class="btn btn-danger">Delete</a>
+
+{% endblock %}

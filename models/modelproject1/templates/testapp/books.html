@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Data</title>
+    <link rel="stylesheet" href="{% static 'css/demo.css'%}">
+</head>
+<body>
+    <h1>The Books List is:</h1><hr>
+    {% if book_list %}
+    <table class="center">
+        
+        <thead>
+            <th>Number</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publish Date</th>
+        </thead>
+    {% for book in book_list %}
+    <tr>
+        <td>{{book.Number}}</td>
+        <td>{{book.Title}}</td>
+        <td>{{book.Author}}</td>
+        <td>{{book.Publish_Date}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    {% else %}
+    <p>No Records Found</p>
+    {% endif %}
+</body>
+</html>

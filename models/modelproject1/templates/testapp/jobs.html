@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs Data</title>
+    
+    <link rel="stylesheet" href="{% static "/css/demo.css" %}">
+</head>
+<body>
+    <h1>The Jobs List is:</h1><hr>
+    {% if jobs_list %}
+    <table class="center">
+        
+        <thead>
+            <th>Posting Date</th>
+            <th>Location</th>
+            <th>Offered Salary</th>
+            <th>Qualification</th>
+        </thead>
+    {% for Jobs in jobs_list %}
+    <tr>
+        <td>{{Jobs.Posting_Date}}</td>
+        <td>{{Jobs.Location}}</td>
+        <td>{{Jobs.Offered_Salary}}</td>
+        <td>{{Jobs.Qualification}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    {% else %}
+    <p>No Records Found</p>
+    {% endif %}
+</body>
+</html>

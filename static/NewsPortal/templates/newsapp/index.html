@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{% static 'css/demo1.css' %}">
+</head>
+<body>
+    <h1>Welcome to Durga News Portal</h1>
+    <img src="{%static 'images/portal.jpg'%}" alt="">
+    <ul>
+        <li><a href="/movies">Movies Informations</a></li>
+        <li><a href="/sports">Sports Informations</a></li>
+        <li><a href="/politics">Politics Informations</a></li>
+    </ul>
+</body>
+</html>

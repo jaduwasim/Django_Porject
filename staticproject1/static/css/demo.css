@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    background-color: aqua;
+}
+img {
+    height: 500px;
+    width: 500px;
+    border: 10px red groove;
+    margin: 0% 20%;
+}
+h1{
+    color: blue;
+}

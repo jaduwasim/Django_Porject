@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- for registration staicfile must be used {% load static %}   -->
+{% load static %}  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Files</title>
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+</head>
+<body>
+    <h1>{{insert_msg}}</h1>
+    <h1>Current Date & Time:{{insert_date}}</h1>
+    <!-- we can use single qoutes as well ad double qoutes also -->
+    <img src="{% static "images/yumna.jpg" %}" alt="">
+    <img src="{% static 'images/yumna.jpg' %}" alt="">
+    <img src="{% static 'images/yumna.jpg' %}" alt="">
+    <img src="{% static 'images/yumna.jpg' %}" alt="">
+    <img src="{% static "images/y2.jpg" %}" alt="">
+</body>
+</html>

@@ -1,0 +1,16 @@
+h1{
+    color: red;
+    text-align: center;
+    font-size: 100px;
+}
+nav{
+    margin: 50px;
+    background: yellow;
+}
+body{
+    background: url(https://images.unsplash.com/photo-1585829365295-ab7cd400c167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+}
+.navbar a{
+    color: red;
+}
