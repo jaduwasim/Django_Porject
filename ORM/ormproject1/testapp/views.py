@@ -31,10 +31,10 @@ def index_view2(request):
     return render(request, 'testapp/test.html', {'emp_list':emp})
 
 def aggregate_view(request):
-    avg = Employee.objects.all().aggregate(Avg('emp_sal'))
-    min = Employee.objects.all().aggregate(Min('emp_sal'))
-    max = Employee.objects.all().aggregate(Max('emp_sal'))
-    sum = Employee.objects.all().aggregate(Sum('emp_sal'))
-    count = Employee.objects.all().aggregate(Count('emp_sal'))
-    aggregate = {'avg':avg['emp_sal__avg'],'min':min['emp_sal__min'],'max':max['emp_sal__max'],'sum':sum['emp_sal__sum'],'count':count['emp_sal__count']}
+    avg = Employee.objects.all().aggregate(Avg('esal'))
+    min = Employee.objects.all().aggregate(Min('esal'))
+    max = Employee.objects.all().aggregate(Max('esal'))
+    sum = Employee.objects.all().aggregate(Sum('esal'))
+    count = Employee.objects.all().aggregate(Count('esal'))
+    aggregate = {'avg':avg['esal__avg'],'min':min['esal__min'],'max':max['esal__max'],'sum':sum['esal__sum'], 'count':count['esal__count']}
     return render(request, 'testapp/aggregate.html', aggregate)
