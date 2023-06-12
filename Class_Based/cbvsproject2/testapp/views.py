@@ -10,7 +10,7 @@ class Book_List_View(ListView):
     # Default Template file name = book_list.hmtl
     # Defailt Context Object Name = book_list
     # we can create our own template file name:
-    # template_name = 'template_file Name'
+    # template_name = 'template_file_location/file_name.html'
     model = Book
 
 class Book_Detail_View(DetailView):
