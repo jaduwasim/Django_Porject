@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="{% static "css/orm.css" %}">
+</head>
+<body>
+    <div align="center">
+        <h1>Emplyee Index List</h1><hr><br>
+        {% if emp_list %}
+        <table border="1">
+            <thead>
+                <th>Employee Name</th>
+                <th>Employee Salary</th>
+            </thead>
+            {% for emp in emp_list %}
+                <tr>
+                    <td>{{emp.ename}}</td>
+                    <td>{{emp.esal}}</td>
+                </tr>
+            {%endfor%}
+        </table>
+        {%else%}
+        <h1>No Records Found</h1>
+        {%endif%}
+    </div>
+</body>
+</html>

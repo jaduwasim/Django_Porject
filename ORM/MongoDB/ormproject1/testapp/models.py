@@ -7,3 +7,6 @@ class Employee(models.Model):
     ename = models.CharField(max_length=64)
     esal = models.FloatField()
     eaddr = models.CharField(max_length=64)
+    
+    class Meta:
+        db_table = 'employee_table'
