@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Hello {{name}}</h1>
+    {% if request.session %}
+    <h3>Thanks for Providing Information</h3>
+    {% for key, val in request.session.items %}
+    <h4>{{key}} : {{val}}</h4>
+    {% endfor %}
+    {% else %}
+    <h3>No Session is available</h3>
+    {% endif %}
+</body>
+</html>

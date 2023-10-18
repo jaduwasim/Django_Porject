@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Item Input Forms</h1> 
+   <form action="" method="post">
+    {{forms.as_p}}
+    {% csrf_token %}
+    <input type="submit" name="Enter Item" id=""><hr>
+    <a href="/result">Show Item</a>
+   </form>
+</body>
+</html>

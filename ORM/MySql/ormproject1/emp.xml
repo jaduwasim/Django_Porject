@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object model="admin.logentry" pk="1">
+        <field name="action_time" type="DateTimeField">2023-02-09T06:18:15.529592+00:00</field>
+        <field name="user" rel="ManyToOneRel" to="auth.user">1</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+        <field name="object_id" type="TextField">1</field>
+        <field name="object_repr" type="CharField">Employee object (1)</field>
+        <field name="action_flag" type="PositiveSmallIntegerField">1</field>
+        <field name="change_message" type="TextField">[{"added": {}}]</field>
+    </object>
+    <object model="auth.permission" pk="1">
+        <field name="name" type="CharField">Can add log entry</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+        <field name="codename" type="CharField">add_logentry</field>
+    </object>
+    <object model="auth.permission" pk="2">
+        <field name="name" type="CharField">Can change log entry</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+        <field name="codename" type="CharField">change_logentry</field>
+    </object>
+    <object model="auth.permission" pk="3">
+        <field name="name" type="CharField">Can delete log entry</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+        <field name="codename" type="CharField">delete_logentry</field>
+    </object>
+    <object model="auth.permission" pk="4">
+        <field name="name" type="CharField">Can view log entry</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+        <field name="codename" type="CharField">view_logentry</field>
+    </object>
+    <object model="auth.permission" pk="5">
+        <field name="name" type="CharField">Can add permission</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+        <field name="codename" type="CharField">add_permission</field>
+    </object>
+    <object model="auth.permission" pk="6">
+        <field name="name" type="CharField">Can change permission</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+        <field name="codename" type="CharField">change_permission</field>
+    </object>
+    <object model="auth.permission" pk="7">
+        <field name="name" type="CharField">Can delete permission</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+        <field name="codename" type="CharField">delete_permission</field>
+    </object>
+    <object model="auth.permission" pk="8">
+        <field name="name" type="CharField">Can view permission</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+        <field name="codename" type="CharField">view_permission</field>
+    </object>
+    <object model="auth.permission" pk="9">
+        <field name="name" type="CharField">Can add group</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+        <field name="codename" type="CharField">add_group</field>
+    </object>
+    <object model="auth.permission" pk="10">
+        <field name="name" type="CharField">Can change group</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+        <field name="codename" type="CharField">change_group</field>
+    </object>
+    <object model="auth.permission" pk="11">
+        <field name="name" type="CharField">Can delete group</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+        <field name="codename" type="CharField">delete_group</field>
+    </object>
+    <object model="auth.permission" pk="12">
+        <field name="name" type="CharField">Can view group</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+        <field name="codename" type="CharField">view_group</field>
+    </object>
+    <object model="auth.permission" pk="13">
+        <field name="name" type="CharField">Can add user</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+        <field name="codename" type="CharField">add_user</field>
+    </object>
+    <object model="auth.permission" pk="14">
+        <field name="name" type="CharField">Can change user</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+        <field name="codename" type="CharField">change_user</field>
+    </object>
+    <object model="auth.permission" pk="15">
+        <field name="name" type="CharField">Can delete user</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+        <field name="codename" type="CharField">delete_user</field>
+    </object>
+    <object model="auth.permission" pk="16">
+        <field name="name" type="CharField">Can view user</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+        <field name="codename" type="CharField">view_user</field>
+    </object>
+    <object model="auth.permission" pk="17">
+        <field name="name" type="CharField">Can add content type</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+        <field name="codename" type="CharField">add_contenttype</field>
+    </object>
+    <object model="auth.permission" pk="18">
+        <field name="name" type="CharField">Can change content type</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+        <field name="codename" type="CharField">change_contenttype</field>
+    </object>
+    <object model="auth.permission" pk="19">
+        <field name="name" type="CharField">Can delete content type</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+        <field name="codename" type="CharField">delete_contenttype</field>
+    </object>
+    <object model="auth.permission" pk="20">
+        <field name="name" type="CharField">Can view content type</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+        <field name="codename" type="CharField">view_contenttype</field>
+    </object>
+    <object model="auth.permission" pk="21">
+        <field name="name" type="CharField">Can add session</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+        <field name="codename" type="CharField">add_session</field>
+    </object>
+    <object model="auth.permission" pk="22">
+        <field name="name" type="CharField">Can change session</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+        <field name="codename" type="CharField">change_session</field>
+    </object>
+    <object model="auth.permission" pk="23">
+        <field name="name" type="CharField">Can delete session</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+        <field name="codename" type="CharField">delete_session</field>
+    </object>
+    <object model="auth.permission" pk="24">
+        <field name="name" type="CharField">Can view session</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+        <field name="codename" type="CharField">view_session</field>
+    </object>
+    <object model="auth.permission" pk="25">
+        <field name="name" type="CharField">Can add employee</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+        <field name="codename" type="CharField">add_employee</field>
+    </object>
+    <object model="auth.permission" pk="26">
+        <field name="name" type="CharField">Can change employee</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+        <field name="codename" type="CharField">change_employee</field>
+    </object>
+    <object model="auth.permission" pk="27">
+        <field name="name" type="CharField">Can delete employee</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+        <field name="codename" type="CharField">delete_employee</field>
+    </object>
+    <object model="auth.permission" pk="28">
+        <field name="name" type="CharField">Can view employee</field>
+        <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+        <field name="codename" type="CharField">view_employee</field>
+    </object>
+    <object model="auth.user" pk="1">
+        <field name="password" type="CharField">pbkdf2_sha256$390000$IDG6tKpohFbXuBqKdPowNc$T6d5F512t1dfHxMcYfdzdKVzltsZGNk4NT4l7JWAyUo=</field>
+        <field name="last_login" type="DateTimeField">2023-09-25T15:40:24.586770+00:00</field>
+        <field name="is_superuser" type="BooleanField">True</field>
+        <field name="username" type="CharField">durga</field>
+        <field name="first_name" type="CharField"></field>
+        <field name="last_name" type="CharField"></field>
+        <field name="email" type="CharField"></field>
+        <field name="is_staff" type="BooleanField">True</field>
+        <field name="is_active" type="BooleanField">True</field>
+        <field name="date_joined" type="DateTimeField">2023-02-09T05:44:32.982853+00:00</field>
+        <field name="groups" rel="ManyToManyRel" to="auth.group"></field>
+        <field name="user_permissions" rel="ManyToManyRel" to="auth.permission"></field>
+    </object>
+    <object model="contenttypes.contenttype" pk="1">
+        <field name="app_label" type="CharField">admin</field>
+        <field name="model" type="CharField">logentry</field>
+    </object>
+    <object model="contenttypes.contenttype" pk="2">
+        <field name="app_label" type="CharField">auth</field>
+        <field name="model" type="CharField">permission</field>
+    </object>
+    <object model="contenttypes.contenttype" pk="3">
+        <field name="app_label" type="CharField">auth</field>
+        <field name="model" type="CharField">group</field>
+    </object>
+    <object model="contenttypes.contenttype" pk="4">
+        <field name="app_label" type="CharField">auth</field>
+        <field name="model" type="CharField">user</field>
+    </object>
+    <object model="contenttypes.contenttype" pk="5">
+        <field name="app_label" type="CharField">contenttypes</field>
+        <field name="model" type="CharField">contenttype</field>
+    </object>
+    <object model="contenttypes.contenttype" pk="6">
+        <field name="app_label" type="CharField">sessions</field>
+        <field name="model" type="CharField">session</field>
+    </object>
+    <object model="contenttypes.contenttype" pk="7">
+        <field name="app_label" type="CharField">testapp</field>
+        <field name="model" type="CharField">employee</field>
+    </object>
+    <object model="sessions.session" pk="1u1hf0r5c7rginmacucfi3tt447ikcjq">
+        <field name="session_data" type="TextField">.eJxVjMsKwyAQAP_FcxFl46vH3vsNsqubmrYoxOQU-u9FyKG9zgxziIj7VuLeeY1LFlehxeWXEaYX1yHyE-ujydTqti4kRyJP2-W9ZX7fzvZvULCXsdVWOUgmGGBKlB1MIajAXvEEqJ2x4LxBnZOdHGoOlpWbmTIB-Rm0-HwBwKQ3ew:1qknhB:Z6QI8eu4ZQv_H9wV2AvUYkK2-zBCZBzs_7AxHfqh0A8</field>
+        <field name="expire_date" type="DateTimeField">2023-10-09T15:40:25.115001+00:00</field>
+    </object>
+    <object model="sessions.session" pk="cyyxyj4c9x3syntlyz90tlr25xhd31d5">
+        <field name="session_data" type="TextField">.eJxVjMsKwyAQAP_FcxFl46vH3vsNsqubmrYoxOQU-u9FyKG9zgxziIj7VuLeeY1LFlehxeWXEaYX1yHyE-ujydTqti4kRyJP2-W9ZX7fzvZvULCXsdVWOUgmGGBKlB1MIajAXvEEqJ2x4LxBnZOdHGoOlpWbmTIB-Rm0-HwBwKQ3ew:1qjzXO:-nldsZdRnjoN1tFNy_XD-1YOz539R4_-JH3gROPxWwg</field>
+        <field name="expire_date" type="DateTimeField">2023-10-07T10:06:58.898532+00:00</field>
+    </object>
+    <object model="sessions.session" pk="zyksx5jhrzxokqxbl07m19dluz41ycq0">
+        <field name="session_data" type="TextField">.eJxVjMsKwyAQAP_FcxFl46vH3vsNsqubmrYoxOQU-u9FyKG9zgxziIj7VuLeeY1LFlehxeWXEaYX1yHyE-ujydTqti4kRyJP2-W9ZX7fzvZvULCXsdVWOUgmGGBKlB1MIajAXvEEqJ2x4LxBnZOdHGoOlpWbmTIB-Rm0-HwBwKQ3ew:1pPzk4:UoLdL9VF-3DitwECylVhymV61ZB09wQfuFFhrYBxnMU</field>
+        <field name="expire_date" type="DateTimeField">2023-02-23T05:45:08.300663+00:00</field>
+    </object>
+    <object model="testapp.employee" pk="51">
+        <field name="eno" type="IntegerField">777</field>
+        <field name="ename" type="CharField">Sunny</field>
+        <field name="esal" type="FloatField">777.0</field>
+        <field name="eaddr" type="CharField">Delhi</field>
+    </object>
+    <object model="testapp.employee" pk="52">
+        <field name="eno" type="IntegerField">7737</field>
+        <field name="ename" type="CharField">Mia Diaz</field>
+        <field name="esal" type="FloatField">11955.0</field>
+        <field name="eaddr" type="CharField">Jamesside</field>
+    </object>
+    <object model="testapp.employee" pk="53">
+        <field name="eno" type="IntegerField">2492</field>
+        <field name="ename" type="CharField">Kimberly Brown</field>
+        <field name="esal" type="FloatField">19388.0</field>
+        <field name="eaddr" type="CharField">Vasqueztown</field>
+    </object>
+    <object model="testapp.employee" pk="54">
+        <field name="eno" type="IntegerField">9544</field>
+        <field name="ename" type="CharField">Sabrina Beard</field>
+        <field name="esal" type="FloatField">18480.0</field>
+        <field name="eaddr" type="CharField">Smithshire</field>
+    </object>
+    <object model="testapp.employee" pk="55">
+        <field name="eno" type="IntegerField">6064</field>
+        <field name="ename" type="CharField">Jessica Peters</field>
+        <field name="esal" type="FloatField">16591.0</field>
+        <field name="eaddr" type="CharField">Thomasburgh</field>
+    </object>
+    <object model="testapp.employee" pk="56">
+        <field name="eno" type="IntegerField">1756</field>
+        <field name="ename" type="CharField">Scott Reilly</field>
+        <field name="esal" type="FloatField">11055.0</field>
+        <field name="eaddr" type="CharField">Johnmouth</field>
+    </object>
+    <object model="testapp.employee" pk="57">
+        <field name="eno" type="IntegerField">6358</field>
+        <field name="ename" type="CharField">Lynn Rodriguez</field>
+        <field name="esal" type="FloatField">13234.0</field>
+        <field name="eaddr" type="CharField">Ochoashire</field>
+    </object>
+    <object model="testapp.employee" pk="58">
+        <field name="eno" type="IntegerField">3406</field>
+        <field name="ename" type="CharField">Paul Martin</field>
+        <field name="esal" type="FloatField">16326.0</field>
+        <field name="eaddr" type="CharField">Christopherton</field>
+    </object>
+    <object model="testapp.employee" pk="59">
+        <field name="eno" type="IntegerField">2503</field>
+        <field name="ename" type="CharField">Kenneth Campos</field>
+        <field name="esal" type="FloatField">12529.0</field>
+        <field name="eaddr" type="CharField">Lake Barbarahaven</field>
+    </object>
+    <object model="testapp.employee" pk="60">
+        <field name="eno" type="IntegerField">1473</field>
+        <field name="ename" type="CharField">Nicholas Ford Jr.</field>
+        <field name="esal" type="FloatField">12977.0</field>
+        <field name="eaddr" type="CharField">Robertsbury</field>
+    </object>
+    <object model="testapp.employee" pk="61">
+        <field name="eno" type="IntegerField">8679</field>
+        <field name="ename" type="CharField">Jennifer Long</field>
+        <field name="esal" type="FloatField">19283.0</field>
+        <field name="eaddr" type="CharField">West Adamton</field>
+    </object>
+    <object model="testapp.employee" pk="62">
+        <field name="eno" type="IntegerField">4683</field>
+        <field name="ename" type="CharField">Michael Sloan</field>
+        <field name="esal" type="FloatField">17839.0</field>
+        <field name="eaddr" type="CharField">Berryborough</field>
+    </object>
+    <object model="testapp.employee" pk="63">
+        <field name="eno" type="IntegerField">3425</field>
+        <field name="ename" type="CharField">Colleen Johnson</field>
+        <field name="esal" type="FloatField">16478.0</field>
+        <field name="eaddr" type="CharField">Crystalfort</field>
+    </object>
+    <object model="testapp.employee" pk="64">
+        <field name="eno" type="IntegerField">2179</field>
+        <field name="ename" type="CharField">Tyler Walker</field>
+        <field name="esal" type="FloatField">12993.0</field>
+        <field name="eaddr" type="CharField">Port Rachel</field>
+    </object>
+    <object model="testapp.employee" pk="65">
+        <field name="eno" type="IntegerField">6770</field>
+        <field name="ename" type="CharField">Adam Lewis</field>
+        <field name="esal" type="FloatField">17895.0</field>
+        <field name="eaddr" type="CharField">Lynntown</field>
+    </object>
+    <object model="testapp.employee" pk="66">
+        <field name="eno" type="IntegerField">4027</field>
+        <field name="ename" type="CharField">Alexandria Hill</field>
+        <field name="esal" type="FloatField">10744.0</field>
+        <field name="eaddr" type="CharField">New Kennethtown</field>
+    </object>
+    <object model="testapp.employee" pk="67">
+        <field name="eno" type="IntegerField">1902</field>
+        <field name="ename" type="CharField">Michael Patterson</field>
+        <field name="esal" type="FloatField">14541.0</field>
+        <field name="eaddr" type="CharField">Russellstad</field>
+    </object>
+    <object model="testapp.employee" pk="68">
+        <field name="eno" type="IntegerField">6316</field>
+        <field name="ename" type="CharField">Michelle Green</field>
+        <field name="esal" type="FloatField">17914.0</field>
+        <field name="eaddr" type="CharField">Wilkinsonville</field>
+    </object>
+    <object model="testapp.employee" pk="69">
+        <field name="eno" type="IntegerField">4287</field>
+        <field name="ename" type="CharField">Mr. Dylan Harmon</field>
+        <field name="esal" type="FloatField">17045.0</field>
+        <field name="eaddr" type="CharField">South Kathrynville</field>
+    </object>
+    <object model="testapp.employee" pk="70">
+        <field name="eno" type="IntegerField">1418</field>
+        <field name="ename" type="CharField">Joyce Ortiz</field>
+        <field name="esal" type="FloatField">19817.0</field>
+        <field name="eaddr" type="CharField">Russoside</field>
+    </object>
+    <object model="testapp.employee" pk="71">
+        <field name="eno" type="IntegerField">3754</field>
+        <field name="ename" type="CharField">Gina Hawkins</field>
+        <field name="esal" type="FloatField">16600.0</field>
+        <field name="eaddr" type="CharField">Lake Linda</field>
+    </object>
+    <object model="testapp.employee" pk="72">
+        <field name="eno" type="IntegerField">5234</field>
+        <field name="ename" type="CharField">Jacob Prince</field>
+        <field name="esal" type="FloatField">10019.0</field>
+        <field name="eaddr" type="CharField">Jessehaven</field>
+    </object>
+    <object model="testapp.employee" pk="73">
+        <field name="eno" type="IntegerField">4599</field>
+        <field name="ename" type="CharField">Ricky Horne</field>
+        <field name="esal" type="FloatField">12217.0</field>
+        <field name="eaddr" type="CharField">Lake Wanda</field>
+    </object>
+    <object model="testapp.employee" pk="74">
+        <field name="eno" type="IntegerField">9448</field>
+        <field name="ename" type="CharField">Bridget Butler</field>
+        <field name="esal" type="FloatField">16930.0</field>
+        <field name="eaddr" type="CharField">Karenfurt</field>
+    </object>
+    <object model="testapp.employee" pk="75">
+        <field name="eno" type="IntegerField">6677</field>
+        <field name="ename" type="CharField">Jennifer Davis</field>
+        <field name="esal" type="FloatField">11015.0</field>
+        <field name="eaddr" type="CharField">Nicoleside</field>
+    </object>
+    <object model="testapp.employee" pk="76">
+        <field name="eno" type="IntegerField">9469</field>
+        <field name="ename" type="CharField">Victoria Davis</field>
+        <field name="esal" type="FloatField">15237.0</field>
+        <field name="eaddr" type="CharField">Moorechester</field>
+    </object>
+    <object model="testapp.employee" pk="77">
+        <field name="eno" type="IntegerField">2477</field>
+        <field name="ename" type="CharField">Richard Bridges</field>
+        <field name="esal" type="FloatField">13239.0</field>
+        <field name="eaddr" type="CharField">Reynoldsstad</field>
+    </object>
+    <object model="testapp.employee" pk="78">
+        <field name="eno" type="IntegerField">8008</field>
+        <field name="ename" type="CharField">Kevin Gilbert</field>
+        <field name="esal" type="FloatField">15854.0</field>
+        <field name="eaddr" type="CharField">Jamesborough</field>
+    </object>
+    <object model="testapp.employee" pk="79">
+        <field name="eno" type="IntegerField">9401</field>
+        <field name="ename" type="CharField">Stephanie Maynard</field>
+        <field name="esal" type="FloatField">19044.0</field>
+        <field name="eaddr" type="CharField">Elizabethtown</field>
+    </object>
+    <object model="testapp.employee" pk="80">
+        <field name="eno" type="IntegerField">1535</field>
+        <field name="ename" type="CharField">Robert Burns</field>
+        <field name="esal" type="FloatField">17685.0</field>
+        <field name="eaddr" type="CharField">Morenobury</field>
+    </object>
+    <object model="testapp.employee" pk="81">
+        <field name="eno" type="IntegerField">6611</field>
+        <field name="ename" type="CharField">Daniel Calderon</field>
+        <field name="esal" type="FloatField">15502.0</field>
+        <field name="eaddr" type="CharField">Stevensonborough</field>
+    </object>
+    <object model="testapp.employee" pk="82">
+        <field name="eno" type="IntegerField">7360</field>
+        <field name="ename" type="CharField">Jasmine Morales</field>
+        <field name="esal" type="FloatField">18746.0</field>
+        <field name="eaddr" type="CharField">New Christinebury</field>
+    </object>
+    <object model="testapp.employee" pk="83">
+        <field name="eno" type="IntegerField">5915</field>
+        <field name="ename" type="CharField">Russell Hernandez</field>
+        <field name="esal" type="FloatField">17807.0</field>
+        <field name="eaddr" type="CharField">North Traceyview</field>
+    </object>
+    <object model="testapp.employee" pk="84">
+        <field name="eno" type="IntegerField">9383</field>
+        <field name="ename" type="CharField">Joshua Reyes</field>
+        <field name="esal" type="FloatField">18943.0</field>
+        <field name="eaddr" type="CharField">Port Angelaburgh</field>
+    </object>
+    <object model="testapp.employee" pk="85">
+        <field name="eno" type="IntegerField">8552</field>
+        <field name="ename" type="CharField">Isaac Duffy</field>
+        <field name="esal" type="FloatField">10141.0</field>
+        <field name="eaddr" type="CharField">Kimberlyborough</field>
+    </object>
+    <object model="testapp.employee" pk="86">
+        <field name="eno" type="IntegerField">4588</field>
+        <field name="ename" type="CharField">David Goodwin</field>
+        <field name="esal" type="FloatField">19498.0</field>
+        <field name="eaddr" type="CharField">Jarvisfort</field>
+    </object>
+    <object model="testapp.employee" pk="87">
+        <field name="eno" type="IntegerField">4995</field>
+        <field name="ename" type="CharField">Tammy Ortiz</field>
+        <field name="esal" type="FloatField">17770.0</field>
+        <field name="eaddr" type="CharField">North Jenniferland</field>
+    </object>
+    <object model="testapp.employee" pk="88">
+        <field name="eno" type="IntegerField">8105</field>
+        <field name="ename" type="CharField">Alexander Martinez</field>
+        <field name="esal" type="FloatField">17225.0</field>
+        <field name="eaddr" type="CharField">Harrisfort</field>
+    </object>
+    <object model="testapp.employee" pk="89">
+        <field name="eno" type="IntegerField">4970</field>
+        <field name="ename" type="CharField">William Wells</field>
+        <field name="esal" type="FloatField">10855.0</field>
+        <field name="eaddr" type="CharField">Hernandezville</field>
+    </object>
+    <object model="testapp.employee" pk="90">
+        <field name="eno" type="IntegerField">6257</field>
+        <field name="ename" type="CharField">Mark Wade</field>
+        <field name="esal" type="FloatField">17725.0</field>
+        <field name="eaddr" type="CharField">South Patriciabury</field>
+    </object>
+    <object model="testapp.employee" pk="91">
+        <field name="eno" type="IntegerField">7761</field>
+        <field name="ename" type="CharField">Elizabeth Lam</field>
+        <field name="esal" type="FloatField">14462.0</field>
+        <field name="eaddr" type="CharField">Townsendmouth</field>
+    </object>
+    <object model="testapp.employee" pk="92">
+        <field name="eno" type="IntegerField">1</field>
+        <field name="ename" type="CharField">Sunny</field>
+        <field name="esal" type="FloatField">10000.0</field>
+        <field name="eaddr" type="CharField">Mumbai</field>
+    </object>
+    <object model="testapp.employee" pk="93">
+        <field name="eno" type="IntegerField">2</field>
+        <field name="ename" type="CharField">Bunny</field>
+        <field name="esal" type="FloatField">20000.0</field>
+        <field name="eaddr" type="CharField">Delhi</field>
+    </object>
+    <object model="testapp.employee" pk="94">
+        <field name="eno" type="IntegerField">3</field>
+        <field name="ename" type="CharField">Chinny</field>
+        <field name="esal" type="FloatField">30000.0</field>
+        <field name="eaddr" type="CharField">Delhi</field>
+    </object>
+    <object model="testapp.employee" pk="95">
+        <field name="eno" type="IntegerField">4</field>
+        <field name="ename" type="CharField">Pinny</field>
+        <field name="esal" type="FloatField">40000.0</field>
+        <field name="eaddr" type="CharField">Delhi</field>
+    </object>
+    <object model="testapp.employee" pk="96">
+        <field name="eno" type="IntegerField">5</field>
+        <field name="ename" type="CharField">Vinnny</field>
+        <field name="esal" type="FloatField">50000.0</field>
+        <field name="eaddr" type="CharField">Delhi</field>
+    </object>
+    <object model="testapp.employee" pk="97">
+        <field name="eno" type="IntegerField">600</field>
+        <field name="ename" type="CharField">Sunny Leone</field>
+        <field name="esal" type="FloatField">60000.0</field>
+        <field name="eaddr" type="CharField">New Delhi</field>
+    </object>
+    <object model="testapp.employee" pk="98">
+        <field name="eno" type="IntegerField">700</field>
+        <field name="ename" type="CharField">Mahesh Babu</field>
+        <field name="esal" type="FloatField">70000.0</field>
+        <field name="eaddr" type="CharField">Telugu</field>
+    </object>
+    <object model="testapp.employee" pk="99">
+        <field name="eno" type="IntegerField">800</field>
+        <field name="ename" type="CharField">Ravi Teja</field>
+        <field name="esal" type="FloatField">80000.0</field>
+        <field name="eaddr" type="CharField">South India</field>
+    </object>
+    <object model="testapp.employee" pk="100">
+        <field name="eno" type="IntegerField">900</field>
+        <field name="ename" type="CharField">Parabhash Uppalpatti</field>
+        <field name="esal" type="FloatField">900000.0</field>
+        <field name="eaddr" type="CharField">South India</field>
+    </object>
+</django-objects>

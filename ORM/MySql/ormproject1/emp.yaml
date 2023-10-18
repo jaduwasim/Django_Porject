@@ -1,0 +1,593 @@
+-   model: admin.logentry
+    pk: 1
+    fields:
+        action_time: 2023-02-09 06:18:15.529592+00:00
+        user: 1
+        content_type: 7
+        object_id: '1'
+        object_repr: Employee object (1)
+        action_flag: 1
+        change_message: '[{"added": {}}]'
+-   model: auth.permission
+    pk: 1
+    fields:
+        name: Can add log entry
+        content_type: 1
+        codename: add_logentry
+-   model: auth.permission
+    pk: 2
+    fields:
+        name: Can change log entry
+        content_type: 1
+        codename: change_logentry
+-   model: auth.permission
+    pk: 3
+    fields:
+        name: Can delete log entry
+        content_type: 1
+        codename: delete_logentry
+-   model: auth.permission
+    pk: 4
+    fields:
+        name: Can view log entry
+        content_type: 1
+        codename: view_logentry
+-   model: auth.permission
+    pk: 5
+    fields:
+        name: Can add permission
+        content_type: 2
+        codename: add_permission
+-   model: auth.permission
+    pk: 6
+    fields:
+        name: Can change permission
+        content_type: 2
+        codename: change_permission
+-   model: auth.permission
+    pk: 7
+    fields:
+        name: Can delete permission
+        content_type: 2
+        codename: delete_permission
+-   model: auth.permission
+    pk: 8
+    fields:
+        name: Can view permission
+        content_type: 2
+        codename: view_permission
+-   model: auth.permission
+    pk: 9
+    fields:
+        name: Can add group
+        content_type: 3
+        codename: add_group
+-   model: auth.permission
+    pk: 10
+    fields:
+        name: Can change group
+        content_type: 3
+        codename: change_group
+-   model: auth.permission
+    pk: 11
+    fields:
+        name: Can delete group
+        content_type: 3
+        codename: delete_group
+-   model: auth.permission
+    pk: 12
+    fields:
+        name: Can view group
+        content_type: 3
+        codename: view_group
+-   model: auth.permission
+    pk: 13
+    fields:
+        name: Can add user
+        content_type: 4
+        codename: add_user
+-   model: auth.permission
+    pk: 14
+    fields:
+        name: Can change user
+        content_type: 4
+        codename: change_user
+-   model: auth.permission
+    pk: 15
+    fields:
+        name: Can delete user
+        content_type: 4
+        codename: delete_user
+-   model: auth.permission
+    pk: 16
+    fields:
+        name: Can view user
+        content_type: 4
+        codename: view_user
+-   model: auth.permission
+    pk: 17
+    fields:
+        name: Can add content type
+        content_type: 5
+        codename: add_contenttype
+-   model: auth.permission
+    pk: 18
+    fields:
+        name: Can change content type
+        content_type: 5
+        codename: change_contenttype
+-   model: auth.permission
+    pk: 19
+    fields:
+        name: Can delete content type
+        content_type: 5
+        codename: delete_contenttype
+-   model: auth.permission
+    pk: 20
+    fields:
+        name: Can view content type
+        content_type: 5
+        codename: view_contenttype
+-   model: auth.permission
+    pk: 21
+    fields:
+        name: Can add session
+        content_type: 6
+        codename: add_session
+-   model: auth.permission
+    pk: 22
+    fields:
+        name: Can change session
+        content_type: 6
+        codename: change_session
+-   model: auth.permission
+    pk: 23
+    fields:
+        name: Can delete session
+        content_type: 6
+        codename: delete_session
+-   model: auth.permission
+    pk: 24
+    fields:
+        name: Can view session
+        content_type: 6
+        codename: view_session
+-   model: auth.permission
+    pk: 25
+    fields:
+        name: Can add employee
+        content_type: 7
+        codename: add_employee
+-   model: auth.permission
+    pk: 26
+    fields:
+        name: Can change employee
+        content_type: 7
+        codename: change_employee
+-   model: auth.permission
+    pk: 27
+    fields:
+        name: Can delete employee
+        content_type: 7
+        codename: delete_employee
+-   model: auth.permission
+    pk: 28
+    fields:
+        name: Can view employee
+        content_type: 7
+        codename: view_employee
+-   model: auth.user
+    pk: 1
+    fields:
+        password: pbkdf2_sha256$390000$IDG6tKpohFbXuBqKdPowNc$T6d5F512t1dfHxMcYfdzdKVzltsZGNk4NT4l7JWAyUo=
+        last_login: 2023-09-25 15:40:24.586770+00:00
+        is_superuser: true
+        username: durga
+        first_name: ''
+        last_name: ''
+        email: ''
+        is_staff: true
+        is_active: true
+        date_joined: 2023-02-09 05:44:32.982853+00:00
+        groups: []
+        user_permissions: []
+-   model: contenttypes.contenttype
+    pk: 1
+    fields:
+        app_label: admin
+        model: logentry
+-   model: contenttypes.contenttype
+    pk: 2
+    fields:
+        app_label: auth
+        model: permission
+-   model: contenttypes.contenttype
+    pk: 3
+    fields:
+        app_label: auth
+        model: group
+-   model: contenttypes.contenttype
+    pk: 4
+    fields:
+        app_label: auth
+        model: user
+-   model: contenttypes.contenttype
+    pk: 5
+    fields:
+        app_label: contenttypes
+        model: contenttype
+-   model: contenttypes.contenttype
+    pk: 6
+    fields:
+        app_label: sessions
+        model: session
+-   model: contenttypes.contenttype
+    pk: 7
+    fields:
+        app_label: testapp
+        model: employee
+-   model: sessions.session
+    pk: 1u1hf0r5c7rginmacucfi3tt447ikcjq
+    fields:
+        session_data: .eJxVjMsKwyAQAP_FcxFl46vH3vsNsqubmrYoxOQU-u9FyKG9zgxziIj7VuLeeY1LFlehxeWXEaYX1yHyE-ujydTqti4kRyJP2-W9ZX7fzvZvULCXsdVWOUgmGGBKlB1MIajAXvEEqJ2x4LxBnZOdHGoOlpWbmTIB-Rm0-HwBwKQ3ew:1qknhB:Z6QI8eu4ZQv_H9wV2AvUYkK2-zBCZBzs_7AxHfqh0A8
+        expire_date: 2023-10-09 15:40:25.115001+00:00
+-   model: sessions.session
+    pk: cyyxyj4c9x3syntlyz90tlr25xhd31d5
+    fields:
+        session_data: .eJxVjMsKwyAQAP_FcxFl46vH3vsNsqubmrYoxOQU-u9FyKG9zgxziIj7VuLeeY1LFlehxeWXEaYX1yHyE-ujydTqti4kRyJP2-W9ZX7fzvZvULCXsdVWOUgmGGBKlB1MIajAXvEEqJ2x4LxBnZOdHGoOlpWbmTIB-Rm0-HwBwKQ3ew:1qjzXO:-nldsZdRnjoN1tFNy_XD-1YOz539R4_-JH3gROPxWwg
+        expire_date: 2023-10-07 10:06:58.898532+00:00
+-   model: sessions.session
+    pk: zyksx5jhrzxokqxbl07m19dluz41ycq0
+    fields:
+        session_data: .eJxVjMsKwyAQAP_FcxFl46vH3vsNsqubmrYoxOQU-u9FyKG9zgxziIj7VuLeeY1LFlehxeWXEaYX1yHyE-ujydTqti4kRyJP2-W9ZX7fzvZvULCXsdVWOUgmGGBKlB1MIajAXvEEqJ2x4LxBnZOdHGoOlpWbmTIB-Rm0-HwBwKQ3ew:1pPzk4:UoLdL9VF-3DitwECylVhymV61ZB09wQfuFFhrYBxnMU
+        expire_date: 2023-02-23 05:45:08.300663+00:00
+-   model: testapp.employee
+    pk: 51
+    fields:
+        eno: 777
+        ename: Sunny
+        esal: 777.0
+        eaddr: Delhi
+-   model: testapp.employee
+    pk: 52
+    fields:
+        eno: 7737
+        ename: Mia Diaz
+        esal: 11955.0
+        eaddr: Jamesside
+-   model: testapp.employee
+    pk: 53
+    fields:
+        eno: 2492
+        ename: Kimberly Brown
+        esal: 19388.0
+        eaddr: Vasqueztown
+-   model: testapp.employee
+    pk: 54
+    fields:
+        eno: 9544
+        ename: Sabrina Beard
+        esal: 18480.0
+        eaddr: Smithshire
+-   model: testapp.employee
+    pk: 55
+    fields:
+        eno: 6064
+        ename: Jessica Peters
+        esal: 16591.0
+        eaddr: Thomasburgh
+-   model: testapp.employee
+    pk: 56
+    fields:
+        eno: 1756
+        ename: Scott Reilly
+        esal: 11055.0
+        eaddr: Johnmouth
+-   model: testapp.employee
+    pk: 57
+    fields:
+        eno: 6358
+        ename: Lynn Rodriguez
+        esal: 13234.0
+        eaddr: Ochoashire
+-   model: testapp.employee
+    pk: 58
+    fields:
+        eno: 3406
+        ename: Paul Martin
+        esal: 16326.0
+        eaddr: Christopherton
+-   model: testapp.employee
+    pk: 59
+    fields:
+        eno: 2503
+        ename: Kenneth Campos
+        esal: 12529.0
+        eaddr: Lake Barbarahaven
+-   model: testapp.employee
+    pk: 60
+    fields:
+        eno: 1473
+        ename: Nicholas Ford Jr.
+        esal: 12977.0
+        eaddr: Robertsbury
+-   model: testapp.employee
+    pk: 61
+    fields:
+        eno: 8679
+        ename: Jennifer Long
+        esal: 19283.0
+        eaddr: West Adamton
+-   model: testapp.employee
+    pk: 62
+    fields:
+        eno: 4683
+        ename: Michael Sloan
+        esal: 17839.0
+        eaddr: Berryborough
+-   model: testapp.employee
+    pk: 63
+    fields:
+        eno: 3425
+        ename: Colleen Johnson
+        esal: 16478.0
+        eaddr: Crystalfort
+-   model: testapp.employee
+    pk: 64
+    fields:
+        eno: 2179
+        ename: Tyler Walker
+        esal: 12993.0
+        eaddr: Port Rachel
+-   model: testapp.employee
+    pk: 65
+    fields:
+        eno: 6770
+        ename: Adam Lewis
+        esal: 17895.0
+        eaddr: Lynntown
+-   model: testapp.employee
+    pk: 66
+    fields:
+        eno: 4027
+        ename: Alexandria Hill
+        esal: 10744.0
+        eaddr: New Kennethtown
+-   model: testapp.employee
+    pk: 67
+    fields:
+        eno: 1902
+        ename: Michael Patterson
+        esal: 14541.0
+        eaddr: Russellstad
+-   model: testapp.employee
+    pk: 68
+    fields:
+        eno: 6316
+        ename: Michelle Green
+        esal: 17914.0
+        eaddr: Wilkinsonville
+-   model: testapp.employee
+    pk: 69
+    fields:
+        eno: 4287
+        ename: Mr. Dylan Harmon
+        esal: 17045.0
+        eaddr: South Kathrynville
+-   model: testapp.employee
+    pk: 70
+    fields:
+        eno: 1418
+        ename: Joyce Ortiz
+        esal: 19817.0
+        eaddr: Russoside
+-   model: testapp.employee
+    pk: 71
+    fields:
+        eno: 3754
+        ename: Gina Hawkins
+        esal: 16600.0
+        eaddr: Lake Linda
+-   model: testapp.employee
+    pk: 72
+    fields:
+        eno: 5234
+        ename: Jacob Prince
+        esal: 10019.0
+        eaddr: Jessehaven
+-   model: testapp.employee
+    pk: 73
+    fields:
+        eno: 4599
+        ename: Ricky Horne
+        esal: 12217.0
+        eaddr: Lake Wanda
+-   model: testapp.employee
+    pk: 74
+    fields:
+        eno: 9448
+        ename: Bridget Butler
+        esal: 16930.0
+        eaddr: Karenfurt
+-   model: testapp.employee
+    pk: 75
+    fields:
+        eno: 6677
+        ename: Jennifer Davis
+        esal: 11015.0
+        eaddr: Nicoleside
+-   model: testapp.employee
+    pk: 76
+    fields:
+        eno: 9469
+        ename: Victoria Davis
+        esal: 15237.0
+        eaddr: Moorechester
+-   model: testapp.employee
+    pk: 77
+    fields:
+        eno: 2477
+        ename: Richard Bridges
+        esal: 13239.0
+        eaddr: Reynoldsstad
+-   model: testapp.employee
+    pk: 78
+    fields:
+        eno: 8008
+        ename: Kevin Gilbert
+        esal: 15854.0
+        eaddr: Jamesborough
+-   model: testapp.employee
+    pk: 79
+    fields:
+        eno: 9401
+        ename: Stephanie Maynard
+        esal: 19044.0
+        eaddr: Elizabethtown
+-   model: testapp.employee
+    pk: 80
+    fields:
+        eno: 1535
+        ename: Robert Burns
+        esal: 17685.0
+        eaddr: Morenobury
+-   model: testapp.employee
+    pk: 81
+    fields:
+        eno: 6611
+        ename: Daniel Calderon
+        esal: 15502.0
+        eaddr: Stevensonborough
+-   model: testapp.employee
+    pk: 82
+    fields:
+        eno: 7360
+        ename: Jasmine Morales
+        esal: 18746.0
+        eaddr: New Christinebury
+-   model: testapp.employee
+    pk: 83
+    fields:
+        eno: 5915
+        ename: Russell Hernandez
+        esal: 17807.0
+        eaddr: North Traceyview
+-   model: testapp.employee
+    pk: 84
+    fields:
+        eno: 9383
+        ename: Joshua Reyes
+        esal: 18943.0
+        eaddr: Port Angelaburgh
+-   model: testapp.employee
+    pk: 85
+    fields:
+        eno: 8552
+        ename: Isaac Duffy
+        esal: 10141.0
+        eaddr: Kimberlyborough
+-   model: testapp.employee
+    pk: 86
+    fields:
+        eno: 4588
+        ename: David Goodwin
+        esal: 19498.0
+        eaddr: Jarvisfort
+-   model: testapp.employee
+    pk: 87
+    fields:
+        eno: 4995
+        ename: Tammy Ortiz
+        esal: 17770.0
+        eaddr: North Jenniferland
+-   model: testapp.employee
+    pk: 88
+    fields:
+        eno: 8105
+        ename: Alexander Martinez
+        esal: 17225.0
+        eaddr: Harrisfort
+-   model: testapp.employee
+    pk: 89
+    fields:
+        eno: 4970
+        ename: William Wells
+        esal: 10855.0
+        eaddr: Hernandezville
+-   model: testapp.employee
+    pk: 90
+    fields:
+        eno: 6257
+        ename: Mark Wade
+        esal: 17725.0
+        eaddr: South Patriciabury
+-   model: testapp.employee
+    pk: 91
+    fields:
+        eno: 7761
+        ename: Elizabeth Lam
+        esal: 14462.0
+        eaddr: Townsendmouth
+-   model: testapp.employee
+    pk: 92
+    fields:
+        eno: 1
+        ename: Sunny
+        esal: 10000.0
+        eaddr: Mumbai
+-   model: testapp.employee
+    pk: 93
+    fields:
+        eno: 2
+        ename: Bunny
+        esal: 20000.0
+        eaddr: Delhi
+-   model: testapp.employee
+    pk: 94
+    fields:
+        eno: 3
+        ename: Chinny
+        esal: 30000.0
+        eaddr: Delhi
+-   model: testapp.employee
+    pk: 95
+    fields:
+        eno: 4
+        ename: Pinny
+        esal: 40000.0
+        eaddr: Delhi
+-   model: testapp.employee
+    pk: 96
+    fields:
+        eno: 5
+        ename: Vinnny
+        esal: 50000.0
+        eaddr: Delhi
+-   model: testapp.employee
+    pk: 97
+    fields:
+        eno: 600
+        ename: Sunny Leone
+        esal: 60000.0
+        eaddr: New Delhi
+-   model: testapp.employee
+    pk: 98
+    fields:
+        eno: 700
+        ename: Mahesh Babu
+        esal: 70000.0
+        eaddr: Telugu
+-   model: testapp.employee
+    pk: 99
+    fields:
+        eno: 800
+        ename: Ravi Teja
+        esal: 80000.0
+        eaddr: South India
+-   model: testapp.employee
+    pk: 100
+    fields:
+        eno: 900
+        ename: Parabhash Uppalpatti
+        esal: 900000.0
+        eaddr: South India

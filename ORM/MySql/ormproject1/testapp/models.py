@@ -10,3 +10,9 @@ class Employee(models.Model):
     
     class Meta:
         db_table = 'employee_table'
+
+    def __repr__(self) -> str:
+        return f'{self.ename}'
+    
+    def __str__(self) -> str:
+        return f'{self.ename}'

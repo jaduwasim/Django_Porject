@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from testapp.views import middleware_view
+from testapp.views import middleware_view, page_count
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('middleware/',middleware_view)
+    path('middleware/',middleware_view),
+    path('count/', page_count)
 ]

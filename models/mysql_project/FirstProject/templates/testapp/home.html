@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static "css/demo.css" %}">
+</head>
+<body>
+    <h1>Welcome to Home Page</h1>
+    <table border="2">
+        <thead>
+            <th>Country Id</th>
+            <th>City Name</th>
+            <th>Country Name</th>
+            <th>Population</th>
+        </thead>
+        {% for d in data %}
+        <tr>
+            <td>{{d.id}}</td>
+            <td>{{d.city__name}}</td>
+            <td>{{d.name}}</td>
+            <td>{{d.city__population}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

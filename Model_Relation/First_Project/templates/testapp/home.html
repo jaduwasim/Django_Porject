@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if posts %}
+    <h1>Post Informations</h1>
+    <table border="2">
+        <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>POST</th>
+        <th>POST BY (useing: post.user.username)</th>
+        <th>POST_BY (using: post_by method)</th>
+        </tr>
+        {% for post in posts %}
+        <tr>
+            <td>{{post.id}}</td>
+            <td>{{post.title}}</td>
+            <td>{{post.desc | linebreaks}}</td>
+            <td>{{post.user.username}}</td>
+            <td>{{post.post_by}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <h1>No informations</h1>
+    {% endif %}
+</body>
+</html>
