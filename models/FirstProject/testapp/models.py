@@ -2,18 +2,22 @@ from django.db import models
 
 # Create your models here.
 class Country(models.Model):
+    '''This is Country Model which have two field id, name'''
     name = models.CharField(max_length=64, unique=True)
     class Meta:
+        '''Her iam defining Table name for Country'''
         db_table = 'country'
 
     def __str__(self) -> str:
         return f'{self.name}'
     
 class City(models.Model):
+    '''This is City Model which is depend on Contry with foreign Key'''
     name = models.CharField(max_length=64, unique=True)
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
     population = models.PositiveIntegerField()
     class Meta:
+        '''Here we are Defining Table Name for City Table'''
         db_table = 'city'
 
     def __str__(self) -> str:
