@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'student/base.html' %}
+
+{% block title_block %}
+Login
+{%endblock%}
+
+{% block body_block %}
+
+<center>
+    <h1>Login Page</h1><hr>
+    {% if messages %}
+    {% for message in messages %}
+    <p>{{message}}</p>
+    {% endfor %}
+    {% endif %}
+    <form action="" method="post" class="center-form">
+        {% csrf_token %}
+        {% for fm in form %}
+        {{fm.label_tag}} {{fm}} {{fm.errors}} <br><br>
+        {% endfor %}
+        <input type="submit"  value="login">
+    </form>
+</center>
+{% endblock %}

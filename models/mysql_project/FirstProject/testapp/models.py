@@ -19,6 +19,60 @@ class City(models.Model):
     def __str__(self) -> str:
         return f'{self.name}'
 
+'''
+
+=========================================================================
+ORM Questions:
+=========================================================================
+
+from django.db import models
+
+class Country(models.Model):
+	country_name = models.CharField(max_length=64, unique=True)
+
+class City(models.Model):
+	city_name = models.CharField(max_length=64, unique=True)
+	country = models.ForeignKey(Country, on_delete=models.CASECADE)
+	population = models.PosetiveIntegerField()
+
+# Find Avg of population from each country
+data = Country.objects.values('name').annotate(Avg('city__population'))
+data = City.objects.values('country__name').annotate(Avg('population'))
+
+# Find Sum of population from Each county
+data = City.objects.values('country__name').annotate(Sum('population'))
+data = Country.objects.values('name').annotate(Sum('city__population'))
+
+# find Min of popuation from each Country
+data = City.objects.values('country__name').annotate(Min('population'))
+data = Country.objects.values('name').annotate(Min('city__population'))
+
+# find Max of population from each Country
+data = City.objects.values('country__name').annotate(Max('population'))
+data = Country.objects.values('name').annotate(Max('city__population'))
+
+# find number of city from each country
+data = City.objects.values('country__name').annotate(Count('name'))
+data = Country.objects.values('name').annotate(Count('city__name'))
+
+
+# find a city and their country which have min population 
+data = City.objects.values('country__name','name', 'population').order_by('population')[0]
+
+select city.name, country.name from city inner join
+country on city.id = country.id group by country.name 
+where city.population = (select min(city.population) from city);
+
+# find a city and third country which have max population 
+data = City.objects.values('country__name','name', 'population').order_by('-population')[0]
+
+
+
+# Find Average of City population
+data = City.objects.all().aggregate(Avg('popuation'))
+'''
+
+
 
 # Country.objects.bulk_create([
 # Country(name='Brazil'),

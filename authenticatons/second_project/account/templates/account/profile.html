@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if messages %}
+    {% for message in messages %}
+    <p>{{message}}</p>
+    {% endfor %}
+    {% endif %}
+    <h1>{{request.user.first_name|capfirst}} {{request.user.last_name|capfirst}} Welcome to profile</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {% for fm in form %}
+        {{fm.label_tag}} {{fm}} {{fm.errrors}}
+        {% endfor %}
+        <input type="text" value="Save" name="" id="">
+    </form>
+</body>
+</html>

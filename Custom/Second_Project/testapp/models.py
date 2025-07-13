@@ -8,7 +8,7 @@ class CustomUser(AbstractUser):
     first_name = models.CharField(verbose_name='First Name', max_length=255,)
     last_name = models.CharField(verbose_name='Last Name', max_length=255)
     phone = models.IntegerField(verbose_name='Mobile No')
-
+    
     REQUIRED_FIELDS = ['email','phone', 'first_name','last_name']
 
     class Meta:

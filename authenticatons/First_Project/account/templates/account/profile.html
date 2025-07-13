@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'account/base.html' %}
+{% block title_block %}Home{% endblock %}
+
+{%block body_block%} 
+{%if messages%}
+{% for message in messages %}
+<p>{{message}}</p>
+{%endfor%}
+{% endif %}
+
+<h1>Hello {{request.user.username}}</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    {% for fm in form %}
+    {{fm.label_tag}} {{fm}} {{fm.errors}} <br><br>
+    {% endfor %}
+    <input type="submit" value="Save" name="" id="">
+</form>
+{%endblock%} 
